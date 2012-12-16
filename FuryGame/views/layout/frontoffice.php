@@ -54,6 +54,7 @@
 		<!--lien vers les js -->
 	</head> 
 	<body>
+		<div class="header_logo_fg"><a href="<?php echo BASE_URL; ?>/homes" title=""><img src="<?php echo BASE_URL; ?>/img/logo-fury-game.png" title="Logo festival des jeux fury game" alt="Logo festival des jeux fury game"></a></div>
 		<div class="slidertop">
 			<?php
 				include_once ELEMENTS.DS.'frontoffice/slider.php';

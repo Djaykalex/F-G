@@ -49,7 +49,7 @@
 		</div><!--  FIN SLICEBOX  /wrapper -->
 		<!-- SLOGAN-->
 		<div class="fintextslogan"></div>
-		<div class="slogan">Le festival Fury-Game vous accueil toute la journée pour découvrir tous nos jeux !</div>
+		<div class="slogan">Le festival Fury-Game vous accueil le dimanche 26 Mai pour découvrir tous nos jeux !</div>
 		<div class="fintextslogan"></div>
 	</div>
 	
@@ -81,7 +81,7 @@
 						<a class="jeux_tournois_focus"  href="<?php echo BASE_URL;?>/le_tournois/details_jeux/4 ">
 						<img class="jeux_tournois_img" title="Munchkin" alt="Munchkin" src="<?php echo BASE_URL;?>/img/jeux_tournois/focus_munch.jpg"/></a>	
 					</div>
-					<div class="focus_titre2">Team manager Bloodbowl</div>
+					<div class="focus_titre2">Munchkin</div>
 					<div class="focus2">
 						<p>Munchkin, bienvenue dans le Donjon ! Tuez tout ce qui se présente devant vous. Poignardez vos amis. Ramassez tous les trésors et fuyez !</p>
 					</div>
@@ -96,7 +96,7 @@
 						<a class="jeux_tournois_focus"  href="<?php echo BASE_URL;?>/le_tournois/details_jeux/7 ">
 						<img class="jeux_tournois_img" title="Zombicide" alt="Zombicide" src="<?php echo BASE_URL;?>/img/jeux_tournois/focus_Zombicide_col1.jpg"/></a>	
 					</div>
-					<div class="focus_titre3">Team manager Bloodbowl</div>
+					<div class="focus_titre3">Zombicide</div>
 					<div class="focus3">
 						<p>Zombicide, la SCIENCE a permis à l’Homme de transformer la faune et la flore. Ces altérations ont eu de graves conséquences sur l’organisme humain.</p>
 					</div>
@@ -154,19 +154,17 @@
 		<!-- Fin section jeux focus-->
 		<!-- SLOGAN-->
 		<div class="fintextslogan"></div>
-		<div class="slogan">Le festival Fury-Game vous accueil toute la journée pour découvrir tous nos jeux !</div>
+		<div class="slogan">Venez partager vos expériences de jeu avec de nombreux passionnés !</div>
 		<div class="fintextslogan"></div>
 		<!--  Carossel News -->
 		
 		<div class="titre_carrousel"><a href="<?php echo BASE_URL;?>/fury_games/news">Les dernieres news</a></div>
 		<img class="imgnews" src="<?php echo BASE_URL; ?>/img/home_galerie.jpg" alt="fond image" title="fond image" />
 		<div class="caroussel">
-			<br />
 				<div class="list_carousel">
 					<ul id="foo2">
 					<?php foreach($article_resume as $k => $v) { ?>
-						<li><a href="<?php echo BASE_URL;?>/fury_games/details/<?php echo $v["id"]; ?> "><img class="icone_test_news" src="<?php echo BASE_URL."/".$v['icone'];?>" title="<?php echo $v['title']; ?>" alt="<?php echo $v['alt']; ?>"/></a></li>
-						
+						<li><a href="<?php echo BASE_URL;?>/fury_games/details/<?php echo $v["id"]; ?> "><span class="focus_titre"><?php echo $v['title']; ?></span><img class="icone_test_news" src="<?php echo BASE_URL."/".$v['icone'];?>" title="<?php echo $v['title']; ?>" alt="<?php echo $v['alt']; ?>"/></a></li>
 					<?php }?>	
 					</ul>
 					<div class="clearfix"></div>
@@ -174,11 +172,7 @@
 					<a id="next2" class="next" href="#">&gt;</a>
 					<div id="pager2" class="pager"></div>
 				</div>
-			<br />
 		</div>
-		<br />
-		<br />
-		<br />
 		<div class="fintext"></div>
 	</div><!--  Fin Carossel News -->
 </div>

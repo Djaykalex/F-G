@@ -91,14 +91,28 @@
 				}
 				
 				//GESTION DE LA VALEUR PAR DEFAUT
+				
 				if(isset($options['values'][$name])) { $value = $options['values'][$name]; } else { $value = ''; }
+				if(isset($options['values']['icone'])) { $value_icone = $options['values']['icone']; } else { $value_icone = ''; }
+				if(isset($options['values']['petit_icone'])) { $value_petite_image = $options['values']['petit_icone']; } else { $value_petite_image = ''; }
+				
+				
+				$value_auteur = $_SESSION['user_pseudo'];
 				
 				$libelleId = _form_generate_id($name);
 				switch($options['type']) {
 				
 					case 'text':
-					
+						
 						$html .= '<input type="text" '.$attr.' name="'.$name.'" id="'.$libelleId.'" value="'.$value.'" />';								
+					break;
+					
+					case 'text_icone':
+						$html .= '<input type="text" '.$attr.' name="'.$name.'" id="'.$libelleId.'" value="'.$value_icone.'" />';								
+					break;
+					
+					case 'text_petite_image':
+						$html .= '<input type="text" '.$attr.' name="'.$name.'" id="'.$libelleId.'" value="'.$value_petite_image.'" />';								
 					break;
 					
 					case 'textarea':
@@ -141,6 +155,11 @@
 					case 'hidden':
 					
 						return '<input type="hidden" '.$attr.' name="'.$name.'" id="'.$libelleId.'" value="'.$value.'" />';								
+					break;
+					
+					case 'hidden_auteur':
+					
+						return '<input type="hidden" '.$attr.' name="'.$name.'" id="'.$libelleId.'" value="'.$value_auteur.'" />';								
 					break;
 				}
 			

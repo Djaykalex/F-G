@@ -9,18 +9,26 @@
 <!-- Nom de l'auteur-->
 <?php echo form_input('created_by', "created_by" , array('type' => 'hidden_auteur', 'class' => 'maclass', 'name' => 'created_by', 'errors' => $aControllerDatas['errors'],'values' => $_SESSION['user_pseudo']  )); ?>
 
-<!-- image caroussel de l'article
-<?php echo form_input('icone', "image de l'article" , array('type' => 'text_icone', 'class' => 'maclass', 'name' => 'icone', 'errors' => $aControllerDatas['errors'],'values' => $article  )); ?>
--->
+<!-- image caroussel de l'article-->
+<div class="row">
+	<label>Image de l'article</label>
+	<div class="rowright">
+		<input type="text" name="icone" id="InputIcone" <?php echo isset($article['icone']) ? 'value="'.$article['icone'].'"' : ''; ?>>
+		<?php if(isset($aControllerDatas['errors']['icone'])) {  ?> <label for="icone" generated="true" class="error"><?php echo $aControllerDatas['errors']['icone']; ?></label> <?php } ?>
+	</div>
+</div>
+
+<!-- petite image de l'article-->
+<div class="row">
+	<label>petite image de l'article</label>
+	<div class="rowright">
+		<input type="text" name="petit_icone" id="InputPetitIcone" <?php echo isset($article['petit_icone']) ? 'value="'.$article['petit_icone'].'"' : ''; ?>>
+		<?php if(isset($aControllerDatas['errors']['petit_icone'])) {  ?> <label for="petit_icone" generated="true" class="error"><?php echo $aControllerDatas['errors']['petit_icone']; ?></label> <?php } ?>
+	</div>
+</div>
 
 <!-- titre de l'image de l'article-->
 <?php echo form_input('title', "titre de l'image" , array('type' => 'text', 'class' => 'maclass', 'name' => 'title', 'errors' => $aControllerDatas['errors'],'values' => $article  )); ?>
-
-<!-- image caroussel de l'article-->
-<?php echo form_input('icone', "image de l'article" , array('type' => 'text_icone', 'class' => 'maclass', 'name' => 'icone', 'errors' => $aControllerDatas['errors'],'values' => $article  )); ?>
-
-<!-- petite image de l'article-->
-<?php echo form_input('petit_icone', "petite image de l'article" , array('type' => 'text_petite_image', 'class' => 'maclass', 'name' => 'petit_icone', 'errors' => $aControllerDatas['errors'],'values' => $article  )); ?>
 
 <!-- alt de l'image de l'article-->
 <?php echo form_input('alt', "alt de l'image" , array('type' => 'text', 'class' => 'maclass', 'name' => 'alt', 'errors' => $aControllerDatas['errors'],'values' => $article  )); ?>

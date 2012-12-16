@@ -75,9 +75,9 @@ way to fit your requirements.
 #menu li.left ul a.fly {background:transparent url(../img/white-left.gif) no-repeat left center;}
 
 #menu li a:hover,
-#menu li a.fly:hover {color:#fff; background-color:;} 
+#menu li a.fly:hover {color:#000; background-color:;} 
 #menu li:hover > a,
-#menu ul li:hover > a.fly {color:silver; background-color:;}
+#menu ul li:hover > a.fly {color:#000; background-color:;}
 
 #menu table {position:absolute; height:0; width:0; left:0; border-collapse:collapse; margin-top:-6px;}
 #menu table table {position:absolute; left:99%; height:0; width:0; border-collapse:collapse; margin-top:-30px; margin-left:-4px;}

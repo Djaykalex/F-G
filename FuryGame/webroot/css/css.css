@@ -13,6 +13,14 @@ body{
 	font: 14px Georgia;
 	color:#333;
 }
+.header_logo_fg{
+	position:absolute;
+	margin-top:50px;
+	margin-left:750px;
+}
+.header_logo_fg a:hover{
+	position:absolute;
+}
 .Mascotte_bonjour{
 	position:absolute;
 	margin-top:-1500px;
@@ -250,7 +258,8 @@ body{
 	width:180px;
 }
 .slogan{
-	font: bold 20px Georgia, arial ;
+	font: 20px Georgia, arial ;
+	font-weight:bold;
 	color:#ea1515;
 	font-style:italic;
 	text-align: center;
@@ -402,6 +411,7 @@ body{
 	font-weight: bold;
 }
 .caroussel{
+	margin-bottom:100px;
 	margin-left:20px;
 }
 .wrappers {
@@ -452,7 +462,7 @@ body{
 	background:url(../img/fleche_gauche.jpg) no-repeat;
 	height:102px;
 	width:150px;
-	margin-top:-11px;
+	margin-top:5px;
 	float: left;
 	margin-left: 10px;
 }
@@ -460,13 +470,14 @@ body{
 	background:url(../img/fleche_droite.jpg) no-repeat;
 	height:102px;
 	width:150px;
-	margin-top:-11px;
+	margin-top:5px;
 	float: right;
 	margin-right:0px;
 }
 .pager {
 	float: left;
 	width: 430px;
+	margin-top:15px;
 	text-align: center;
 }
 .pager a {
@@ -558,11 +569,23 @@ body{
 	margin-left:40px;
 }
 .icone_test_news{
-	margin-top:9px;
+	margin-top:25px;
 	margin-left:-5px;
 	width:240px;
 	height:200px;
 }
+/** titre en dessous de l'image news du carrousel*/
+.focus_titre{
+	font-size:16px;
+	position:absolute;
+	margin-top:178px;
+	display:block;
+	width:240px;
+	height:50px;
+	z-index:100;
+	color:#ea1515;
+}
+
 .icone_petit_news{
 	margin-top:-60px;
 	box-shadow:3px 3px 15px #555;
@@ -852,6 +875,21 @@ le soustitre est utilisé dans les parties rapides, guildes vs guildes ...
 	display:block;
 	box-shadow:3px 3px 15px #ea1515;
 }
+/** nom du jeu affiché sous l'image*/
+.jeux_tournois_title a{
+	font-size:15px;
+	color:#ea1515;
+	margin-top:100px;
+	margin-left:-180px;
+	float:left;
+}
+.jeux_tournois_title a:hover{
+	font-size:15px;
+	color:#000;
+	margin-top:100px;
+	margin-left:-180px;
+	float:left;
+}
 /** Icones Age, time et players*/
 .age_icone{
 	position:absolute;
@@ -860,7 +898,6 @@ le soustitre est utilisé dans les parties rapides, guildes vs guildes ...
 }
 .time_icone{
 	position:absolute;
-	
 	margin-left:220px;
 }
 .players_icone{
@@ -1513,7 +1550,7 @@ le soustitre est utilisé dans les parties rapides, guildes vs guildes ...
 }
 
 .contentcommentaires{
-	
+	width:800px;
 	text-align: justify;
 	padding-left:50px;
 	font: 17px Georgia, Arial, Helvetica, sans-serif;
@@ -1838,9 +1875,12 @@ hr{
 	position:absolute;
 	margin-top:-730px;
 	margin-left:450px;
-	
 }
-
+.contact_logo_assoc{
+	position:absolute;
+	margin-top:-350px;
+	margin-left:600px;
+}
 
 
 

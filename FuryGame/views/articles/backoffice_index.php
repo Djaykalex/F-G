@@ -17,9 +17,7 @@
 				'id' => "ArticleEdit"
 				));
 			?>
-			
-			
-			
+
 			<table cellspacing="0" cellpadding="0" border="0" class="table">
 				<thead>
 					<tr>

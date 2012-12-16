@@ -1,9 +1,9 @@
 
 <?php if(isset($aControllerDatas['comptes'])) { $comptes = $aControllerDatas['comptes']; } ?>
 
-<div class="grid_16 ">
-	<div class="fondtext titrefond">
-		<div class="titre">Creer votre compte</div>
+<div class="grid_16 background_blanc">
+	<div class="fondtext">
+		<div class="titre_details_articles">Creer votre compte</div>
 		
 		<div class="text">
 			Vous souhaitez créer un compte afin d'etre Guild Master pour créer une guilde, etre membre d'une guilde, ou simple membre... C'est içi que ca se passe !! 

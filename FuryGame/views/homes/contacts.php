@@ -56,5 +56,6 @@
 			</div>
 		</form>
 		<img class="contact_logo" src="<?php echo BASE_URL;?>/img/logo-fury-game.png" title="logo fury-game" alt="logo fury-game" />
+		<img class="contact_logo_assoc" src="<?php echo BASE_URL;?>/img/press-start-to-play.png" title="logo press start to play" alt="logo press start to play" />
 	</div>
 </div>

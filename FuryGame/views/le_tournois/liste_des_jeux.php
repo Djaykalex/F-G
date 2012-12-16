@@ -8,6 +8,7 @@
 		<div class="">
 			<a class="jeux_tournois"  href="<?php echo BASE_URL;?>/le_tournois/details_jeux/<?php echo $v["id"]; ?> "><img class="jeux_tournois" title="<?php echo $v['title_image'];?>" alt="<?php echo $v['alt'];?>" src="<?php echo BASE_URL."/".$v['front_image'];?>"/></a>	
 		</div>
+		<p class="jeux_tournois_title"><a href="<?php echo BASE_URL;?>/le_tournois/details_jeux/<?php echo $v["id"]; ?> " title="<?php echo $v["title_image"]; ?>"><?php echo $v["title_image"]; ?></a></p>
 	<?php }?>	
 </div>
 <div class="grid_16 background_blanc">

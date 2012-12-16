@@ -13,7 +13,7 @@
 			?>
 				
 				<input type="hidden" value="<?php echo $aControllerDatas['id']; ?>" name="id" />
-				<?php include(ELEMENTS.DS.'backoffice'.DS.'formulaires'.DS.'articles.php'); ?>
+				<?php include(ELEMENTS.DS.'backoffice'.DS.'formulaires'.DS.'articles_edit.php'); ?>
 			<?php echo form_close(); ?>
 		</div>
 	</div>
